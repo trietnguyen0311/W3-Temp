@@ -83,10 +83,26 @@ html {
 
 .content {
     background-color: #f1f1f1;
-    padding: 22px 16px 0 316px;
+    padding: 0 16px 0 316px;
 }
 
 /* =======HEADER======= */
+.header {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+.header_icon {
+    font-size: 36px;
+}
+
+.header_avatar {
+    width: 64px;
+    clip-path: circle(50%);    
+}
+
 .content-header {
     border-bottom: 6px solid #ccc;
     margin-bottom: 10px;
@@ -96,6 +112,7 @@ html {
     font-size: 36px;
     padding-bottom: 30px;
     font-weight: 500;
+    padding-top: 20px;
 }
 
 .content-header .nav-list {
@@ -191,11 +208,14 @@ html {
 }
 
 /* ====ABOUT===== */
+#about {
+    padding-top: 20px;
+}
 
 .about-header {
     display: flex;
     justify-content: space-between;
-    margin: 0 -8px 45px;
+    margin: 0 -8px 40px;
 }
 
 .about-header .about-img {
@@ -208,13 +228,14 @@ html {
 }
 
 .about-content .about-title {
-    padding-bottom: 30px;
-    font-size: 24px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    font-weight: 500;
 }
 
 .about-content .about-discription {
-    line-height: 1.8;
-    padding-bottom: 50px;
+    line-height: 1.6;
+    padding-bottom: 40px;
 }
 
 .about-skill {
@@ -223,7 +244,7 @@ html {
 
 .about-skill .about-skill__title {
     font-size: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .about-skill .about-skill__item {
@@ -286,7 +307,7 @@ html {
 .charge-title {
     font-size: 20px;
     padding-top: 50px;
-    padding-bottom: 10px;
+    padding-bottom: 18px;
 }
 
 .charge-items {
@@ -363,7 +384,7 @@ html {
     margin-right: -16px;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: #888;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .contact-header {
@@ -416,11 +437,14 @@ html {
 
 .contact-form .form .title {
     padding-bottom: 2px;
+    cursor: default;
 }
 
 .contact-form .form .input{
     height: 40px;
     width: 100%;
+    padding: 8px;
+    outline: none;
 }
 
 .contact-form .form-message {
@@ -430,8 +454,19 @@ html {
 .btn-submit {
     color:#fff;
     background-color: #000;
-    padding: 10px 16px;
+    padding: 14px 16px;
     text-decoration: none;
+    border: none;
+}
+
+.btn-submit-icon {
+    padding-right: 10px;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
 }
 
 #footer {
@@ -451,7 +486,7 @@ html {
 
 .footer-title {
     font-size: 20px;
-    padding: 20px 0;
+    padding: 40px 0 20px;
 }
 
 .footer-info {
@@ -514,4 +549,80 @@ html {
 
 .powered .powered-link {
     color: #fff;
+}
+
+
+/* ========Modal======== */
+.modal {
+    position: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-container {
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    padding: 22px 16px;
+}
+
+.modal-container .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.modal-container .close-icon {
+    font-size: 64px;
+    float: right;
+    padding: 32px 20px;
+}
+
+.modal-container h2 {
+    font-size: 21px;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.modal-container .temp {
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.modal-container .navbar-list {
+    margin: -16px 0 -16px -16px;
+}
+
+.modal-container .navbar-list .list-item {
+    display: block;
+    color:#000;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+.navmodal-containerbar .navbar-list .list-item:hover{
+    background-color: #ccc;
+    color: #000!important;
+}
+
+.modal-container .navbar-list .list-item .list-icon {
+    margin-right: 14px;
+}
+
+.modal-container .navbar-list .list-item:first-child {
+    color: #009688;
+}
+
+.modal-container .social-icons {
+    padding-top: 30px;
+}
+
+.modal-container .social-icons .social-icon {
+    color: #000;
+    font-size: 16px;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/respondsive.css">
 </head>
 <body>
     <div id="main">
@@ -41,6 +42,11 @@
         </div>
     
         <div class="content">
+            <div class="header">
+                <i class="header_icon fas fa-bars"></i>
+                <img src="./assests/img/avatar_g2.jpg" alt="" class="header_avatar">
+            </div>
+
             <div id="portfolio">
                 <div class="content-header">
                     <h1>My Portfolio</h1>
@@ -207,20 +213,20 @@
                 <div class="contact-form">
                     <div class="form form-name">
                         <div class="title">Name</div>
-                        <input class="input" type="text" name="name">
+                        <input class="input" type="text" required name="name">
                     </div>
                     <div class="form form-email">
                         <div class="title">Email</div>
-                        <input class="input" type="email" name="email">
+                        <input class="input" type="email" required name="email">
                     </div>
                     <div class="form form-message">
                         <div class="title">Message</div>
-                        <input class="input" type="text" name="message">
+                        <input class="input" type="text" required name="message">
                     </div>
-                    <a href="" class="btn-submit">
-                        <i class="fas fa-paper-plane"></i>
+                    <button class="btn-submit">
+                        <i class="btn-submit-icon fas fa-paper-plane"></i>
                         Send Message
-                    </a>
+                    </button>
                 </div>
             </div>
 
@@ -283,7 +289,42 @@
             <div class="powered">
                 <p>Powered by <a class="powered-link" href="https://github.com/trietnguyen0311">trietnguyen0311</a></p>
             </div>
-        </div>  
+        </div> 
+        
+
+
+        <div class="modal">
+            <div class="modal-container">
+                <img src="./assests/img/avatar_g2.jpg" alt="avatar" class="avatar">
+                <i class="close-icon fas fa-times"></i>
+                <h2>PORTFOLIO</h2>
+                <p class="temp">Template by W3.CSS</p>
+            
+                <div class="navbar-list">
+                <a href="#portfolio" class="list-item">
+                    <i class="fas fa-th-large list-icon"></i>
+                    PORTFOLIO
+                </a>               
+                <a href="#about" class="list-item">
+                    <i class="fas fa-user list-icon"></i>
+                    ABOUT
+                </a>
+                <a href="#contact" class="list-item">
+                    <i class="fas fa-envelope list-icon"></i>
+                    CONTACT
+                </a>
+                </div>
+                <div class="social-icons">
+                <a href=""><i class="social-icon fab fa-facebook-square"></i></a>
+                <a href=""><i class="social-icon fab fa-instagram-square"></i></a>
+                <a href=""><i class="social-icon fab fa-snapchat"></i></a>
+                <a href=""><i class="social-icon fab fa-pinterest"></i></a>
+                <a href=""><i class="social-icon fab fa-twitter"></i></a>
+                <a href=""><i class="social-icon fab fa-linkedin"></i></a>
+                </div> 
+            </div>
+        </div>
+
     </div>
 </body>
 </html>

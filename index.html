@@ -40,12 +40,52 @@
                 <a href=""><i class="social-icon fab fa-linkedin"></i></a>
             </div>    
         </div>
-    
-        <div class="content">
-            <div class="header">
+        
+        <div class="header">
+            <label for="nav-mobile-input">
                 <i class="header_icon fas fa-bars"></i>
-                <img src="./assests/img/avatar_g2.jpg" alt="" class="header_avatar">
+            </label>
+            <img src="./assests/img/avatar_g2.jpg" alt="" class="header_avatar">
+        </div>
+
+        <input type="checkbox" class="nav__input" name="" id="nav-mobile-input">
+
+        <!-- nav mobile -->
+        <label for="nav-mobile-input" id="nav__overlay" class="nav__overlay"></label>
+
+        <div id="nav__mobile" class="nav__mobile">
+            <img src="./assests/img/avatar_g2.jpg" alt="avatar" class="avatar">
+            <label for="nav-mobile-input">
+                <i class="close-icon fas fa-times"></i>
+            </label>
+            <h2>PORTFOLIO</h2>
+            <p class="temp">Template by W3.CSS</p>
+            <div class="navbar-list">
+                <a href="#portfolio" class="list-item mobile-list">
+                    <i class="fas fa-th-large list-icon"></i>
+                    PORTFOLIO
+                </a>            
+                <a href="#about" class="list-item mobile-list">
+                    <i class="fas fa-user list-icon"></i>
+                    ABOUT
+                </a>
+                <a href="#contact" class="list-item mobile-list">
+                    <i class="fas fa-envelope list-icon"></i>
+                    CONTACT
+                </a>
             </div>
+            <div class="social-icons">
+                <a href=""><i class="social-icon fab fa-facebook-square"></i></a>
+                <a href=""><i class="social-icon fab fa-instagram-square"></i></a>
+                <a href=""><i class="social-icon fab fa-snapchat"></i></a>
+                <a href=""><i class="social-icon fab fa-pinterest"></i></a>
+                <a href=""><i class="social-icon fab fa-twitter"></i></a>
+                <a href=""><i class="social-icon fab fa-linkedin"></i></a>
+            </div> 
+        </div>
+ 
+        <!-- nav-mobile -->
+        <div class="content">
 
             <div id="portfolio">
                 <div class="content-header">
@@ -153,7 +193,7 @@
                                         <div class="time">per month</div>
                                     </li>
                                     <li>
-                                        <a href="" class="btn-sign">Sign Up</a>
+                                        <button class="btn-sign js-btn-sign">Sign Up</button>
                                     </li>                                
                                 </ul>
                             </div>
@@ -169,7 +209,7 @@
                                         <div class="time">per month</div>
                                     </li>                                
                                     <li>
-                                        <a href="" class="btn-sign">Sign Up</a>
+                                        <button class="btn-sign js-btn-sign">Sign Up</button>
                                     </li>
                                 </ul>
                             </div>
@@ -185,7 +225,7 @@
                                         <div class="time">per month</div>
                                     </li>  
                                     <li>
-                                        <a href="" class="btn-sign">Sign Up</a>
+                                        <button class="btn-sign js-btn-sign">Sign Up</button>
                                     </li>                              
                                 </ul>
                             </div>
@@ -289,42 +329,36 @@
             <div class="powered">
                 <p>Powered by <a class="powered-link" href="https://github.com/trietnguyen0311">trietnguyen0311</a></p>
             </div>
+
         </div> 
-        
 
-
-        <div class="modal">
-            <div class="modal-container">
-                <img src="./assests/img/avatar_g2.jpg" alt="avatar" class="avatar">
-                <i class="close-icon fas fa-times"></i>
-                <h2>PORTFOLIO</h2>
-                <p class="temp">Template by W3.CSS</p>
-            
-                <div class="navbar-list">
-                <a href="#portfolio" class="list-item">
-                    <i class="fas fa-th-large list-icon"></i>
-                    PORTFOLIO
-                </a>               
-                <a href="#about" class="list-item">
-                    <i class="fas fa-user list-icon"></i>
-                    ABOUT
-                </a>
-                <a href="#contact" class="list-item">
-                    <i class="fas fa-envelope list-icon"></i>
-                    CONTACT
-                </a>
+        <div class="sign-up js-sign-up">
+            <div class="SU-container js-SU-container">
+                <header class="SU-container__header">
+                    <h1 class="header-title">SIGN UP NOW</h1>
+                    <i class="fas fa-times close-icon js-close-icon"></i>
+                    <p class="header-description1">Create an account is free ---</p>
+                    <p class="header-description2">and won't be take longer than a couple of seconds</p>
+                </header>
+                <div class="SU-container__body">
+                    <label for="SU-email" class="SU-body-label">
+                        Email
+                    </label>
+                    <input type="text" id="SU-email" class="SU-body-input" required placeholder="Nhập Email">
+                    <label for="SU-password" class="SU-body-label">
+                        Password
+                    </label>
+                    <input type="password" id="SU-password" class="SU-body-input" required placeholder="Nhập mật khẩu">                    
+                    <label for="SU-repassword" class="SU-body-label">
+                        Confirm password
+                    </label>
+                    <input type="password" id="SU-repassword" class="SU-body-input" required placeholder="Nhập lại mật khẩu">
                 </div>
-                <div class="social-icons">
-                <a href=""><i class="social-icon fab fa-facebook-square"></i></a>
-                <a href=""><i class="social-icon fab fa-instagram-square"></i></a>
-                <a href=""><i class="social-icon fab fa-snapchat"></i></a>
-                <a href=""><i class="social-icon fab fa-pinterest"></i></a>
-                <a href=""><i class="social-icon fab fa-twitter"></i></a>
-                <a href=""><i class="social-icon fab fa-linkedin"></i></a>
-                </div> 
+                <button id="sign-up" class="SU-button">Sign Up</button>
             </div>
         </div>
-
     </div>
+
+    <script src ="main.js"></script>
 </body>
 </html>

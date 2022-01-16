@@ -441,7 +441,6 @@ html {
   opacity: 0.6;
   width: 33.33333%;
   text-align: center;
-  border: 2px solid #ccc;
   margin: 0 8px;
 }
 
@@ -464,6 +463,8 @@ html {
   list-style-type: none;
   background-color: #fff;
   color: #000;
+  border: 1px solid #ccc;
+
 }
 
 .charge-item__info li {
@@ -518,6 +519,7 @@ html {
 
 .contact-info {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 20px;
 }
 

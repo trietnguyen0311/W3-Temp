@@ -37,55 +37,44 @@
     .header {
         display: flex;
     }
-
     .row {
         padding-bottom: 0px;
     }
-
     .row .item {
         flex: 0 0 100%;
         max-width: 100%;
         padding-bottom: 18px;
     }
-    
     .about-header .about-img {
         width:100%;
         padding: 8px;
     }
-
     .nav-list-items .btn-ccc:nth-child(3),
     .nav-list-items .btn-ccc:nth-child(4) {
         display: none;
     }
-
     .nav-center {
         padding: 20px 0 20px;
     }
-
     .charge-items {
         flex-wrap: wrap;
     }
-    
     .charge-item {
         margin: 0;
         width: 100%;
         margin-bottom: 18px;
     }
-
     .contact-email,
     .contact-phone,
     .contact-location {
         width: 100%;
     }
-
     #footer {
         flex-direction: column;
     }
-
     .footer {
         width: 100%;
     }
-
     .footer-title {
         padding: 25px 0 20px;
     }

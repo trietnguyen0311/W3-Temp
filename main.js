@@ -27,24 +27,36 @@ signContainer.addEventListener('click', function(event) {
     }
 )
 
-// Ẩn nav mobile khi nhấn nav mobile
-// var navMobile = document.getElementById('nav__mobile')
-// var navOverlay = document.getElementById('nav__overlay')
-// const mobileMenus = document.querySelectorAll('.mobile-list')
-// const headerIcon = document.querySelector('.header_icon')
+// Hiện nav mobile
+const navOverlay = document.querySelector('.nav__overlay')
+const headerIcon = document.querySelector('.header_icon')
+const navMobile = document.querySelector('.nav__mobile')
+const closeIcon = document.querySelector('.close-icon')
+const mobileLists = document.querySelectorAll('.mobile-list')
 
-// function hideNavMobile() {
-//     navMobile.style.display = "none";
-//     navOverlay.style.display = "none";
-// }
-// function showNavMobile() {
-//     navOverlay.style.display = 'block';
-// }
+//Hàm hiển thị navOverlay 
+function showOverlay() {
+    navOverlay.classList.add('open')
+}
+// Hàm ẩn navOverlay đăng kí
+function hideOverlay() {
+    navOverlay.classList.remove('open')
+}
 
-// headerIcon.addEventListener('click', showNavMobile)
+// Nghe hành vi khi click vào icon bar
+headerIcon.addEventListener('click',showOverlay)
 
-// for (const mobileMenu of mobileMenus) {
-//     mobileMenu.addEventListener('click', hideNavMobile)
-// }
 
- 
+// Đóng navmobile khi click vào icon close
+closeIcon.addEventListener('click',hideOverlay)
+
+for (const mobileList of mobileLists) {
+    mobileList.addEventListener('click', hideOverlay)
+}
+
+navOverlay.addEventListener('click', hideOverlay)
+
+navMobile.addEventListener('click', function(event) {
+    event.stopPropagation()
+})
+
